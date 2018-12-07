@@ -1,42 +1,105 @@
-include mixins
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="natsukage"><title>Lia 「Anime！Anime！」访谈简单要点总结 · 夏影</title><meta name="description" content="2018年6月13日于微博发布的文章　进行了重排版和校对。
+读前须知：
+可能存有大量翻译错误和漏翻，仅供快速阅览用，感谢@shiryuuki老师的原案与协力。
 
-extends partial/layout
+本文不是一成不变地在翻译，只选了新内容来翻译。
 
-block site_title
-    != page.title + " · " + config.title
+为了总结出几大要点做出了一些前后顺序上的重构。
 
-block description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
+可能存有大量翻译错误和漏翻，但应该不会"><meta name="keywords" content=""><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">natsukage</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">夏影</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/about/H.html">污物集散地</a></li><li><a href="/about/index.html">关于</a></li><li class="soc"><a href="https://Clarecia.github.io/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2018&nbsp;<a target="_blank" href="https://Clarecia.github.io" rel="noopener noreferrer">natsukage</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>Lia 「Anime！Anime！」访谈简单要点总结</a></p><p class="post-meta"><span class="date meta-item">发布于&nbsp;2018-12-07</span><span class="meta-item"><i class="fa fa-comment-o"></i><span>&nbsp;</span><a href="/posts/Lia - Anime!Anime! Interview/#comments">评论</a></span><span class="meta-item"><i class="fa fa-folder"></i><span>&nbsp;</span><a href="/categories/Music/" title="Music" class="a-tag">Music</a><span>&nbsp;</span></span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/Lia/" title="Lia" class="a-tag">Lia</a><span>&nbsp;</span><a href="/tags/shiryuuki/" title="shiryuuki" class="a-tag">shiryuuki</a><span>&nbsp;</span></span></p><p class="post-abstract"></p><p>2018年6月13日于<a href="https://weibo.com/ttarticle/p/show?id=2309404250266085000315" target="_blank" rel="noopener">微博发布的文章</a>　进行了重排版和校对。</p>
+<h3 id="读前须知："><a href="#读前须知：" class="headerlink" title="读前须知："></a>读前须知：</h3><ol start="0">
+<li><p><strong>可能存有大量翻译错误和漏翻，仅供快速阅览用，感谢<a href="https://weibo.com/u/2275521035" target="_blank" rel="noopener">@shiryuuki</a>老师的原案与协力。</strong></p>
+</li>
+<li><p><strong>本文不是一成不变地在翻译，只选了新内容来翻译。</strong></p>
+</li>
+<li><p><strong>为了总结出几大要点做出了一些前后顺序上的重构。</strong></p>
+</li>
+<li><p><strong>可能存有大量翻译错误和漏翻，但应该不会产生误导，如果有大神来翻译全篇就更好了。</strong></p>
+</li>
+<li><p><strong>极力推荐看得懂的同学去看原文，不要看我这个塞翻：<a href="https://animeanime.jp/article/2018/05/28/37910.html" target="_blank" rel="noopener">原文</a></strong></p>
+</li>
+</ol>
+<h2 id="企划"><a href="#企划" class="headerlink" title="企划"></a>企划</h2><p>本张专辑之所以会出，是因为从前就有很多粉丝说想要听Lia翻唱。</p>
+<p>Lia说，「我在过去的活动中专注于动画和游戏的主题曲，但是我的Producer说现在是时候能回应这样的期待了吧，所以就挑战了翻唱专辑」。</p>
+<p>这张专辑的概念：<strong>「代表日本的动画歌曲，日本最高峰的音乐家编曲家们进行编排，由Lia来演唱。」</strong>。于是制作出了「最适合Lia的编曲」这样的一张专辑。</p>
+<center><img src="https://wx3.sinaimg.cn/large/90b1e305ly4fuuyikpssnj20hs0bu40f.jpg" alt="　"></center>
 
-block content
-    .autopagerize_page_element: .content: .post-page
-        include mixins
-        +make_post(page, true)
-        .share
-            span= __('share')
-            | &nbsp;
-            span.soc
-                a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
-            span.soc
-                a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
-            span.soc
-                a.fa.fa-twitter(href=url_for("http://twitter.com/home?status=" + "" + config.url + "/" + page.path + "%20" + config.title + "%20" + page.title + ""))
-        - var prev = page.prev ? page.prev.path : false;
-        - var next = page.next ? page.next.path : false;
-        .pagination
-            p.clearfix
-                if prev
-                    span.pre.pagbuttons
-                        a(role="navigation",href=url_for(prev), title=page.prev.title)
-                            i.fa.fa-angle-double-left
-                            |&nbsp;
-                            != __('prev_post')+': ' + page.prev.title
-                if next
-                    span &nbsp;
-                    span.next.pagbuttons
-                        a(role="navigation",href=url_for(next), title=page.next.title)
-                            != __('next_post')+': ' + page.next.title
-                            |&nbsp;
-                            i.fa.fa-angle-double-right
-        include partial/comments
+
+<h2 id="选曲"><a href="#选曲" class="headerlink" title="选曲"></a>选曲</h2><ul>
+<li>Lia说她自己是听迪斯尼的歌长大的，所以传达了「想加入迪斯尼的歌曲」的要求。一开始列举了「美女与野兽」，结果Producer说「诶，那个很普通」。但是作为替代的，Lia做出了翻唱「花木兰」的「Reflection」的提案。 Lia本人是在美国的伯克利音乐学院学习唱歌的。所以Producer想通过「花木兰」，让她唱一首帅气的英文歌。然后，在「花木兰」中演唱了「Reflection」的Lea Salonga也是在Lia特别喜欢的动画「阿拉丁」中演唱过「A Whole New World」的歌手，所以「自己无论如何都要」就接受了。</li>
+</ul>
+<ul>
+<li><p>Lia因为非常喜欢吉卜力的世界观，所以「一定要把一首吉卜力的歌曲放进去！」但是专辑内原定就有一首偏古典的乐曲，所以如果就原原本本地唱「幽灵公主」的话就会有同样的气氛。「那太无聊了」，于是对于幽灵公主这首歌做出了许多改变。</p>
+</li>
+<li><p>「机动战士高达F91」中的「ETERNAL WIND」也是Lia自己要求的。她以前（注：2010）在ANIMAX MUSIX上翻唱过这首歌，那天没能来的粉丝超遗憾，于是一直在等有朝一日再唱的机会。这是一直在在Lia心中的一首歌曲。</p>
+</li>
+<li><p>「Angel Beats！」中的「最珍贵的宝物」。Lia在Key的Live上听katuta和LiSA演唱的时候，一直觉得这是一首不错的歌曲。这一次Lia第一次演唱这首歌，粉丝们纷纷表示自己听到哭。Lia自己也在录音的时候，想到了歌词中的「大家」（注：みんな）这部分，也想到了每个支持着Lia的粉丝们，一边想着一边唱，所以也是接近涕零。</p>
+</li>
+<li><p>「火影忍者疾风传」中的「青鸟」是Producer提出的提案。</p>
+</li>
+<li><p>「阳炎PROJECT」的创作者Jin君和Lia是一个事务所的（注：1stPLACE），他非常想听Lia翻唱「魔卡少女樱」的「白金」，这次就也翻唱了。</p>
+</li>
+<li><p>「化物语」中的「你不知道的故事」是「Lia的新一面」。这首歌Lia是这次第一次听的。Lia到现在为止唱摇滚调的曲子并不多（吐槽：……），「我觉得可以享受和平时的我不同的感觉」。</p>
+</li>
+<li><p>Lia在事务所对于喜欢动画的工作人员们提问讨论，一直很安静的孩子突然有强烈的请求。就是这样添加着候补，补充了Lia自己和其Producer无法判断的地方。</p>
+<p> 比如说：「如果是女性歌手，要翻唱Anison的话，那就是「残酷天使的行动纲领」吧」，结果被说道「Lia不可以唱这首歌！」，Lia自己就很不可思议。只有她自己和Producer商量的话，会觉得这首歌是Anison的定番，就会这样放进去，但是他说：「Lia桑不要唱那个，要唱这首！」听到大家的声音，让她感受到了粉丝所追求的东西。</p>
+<center> <strong>「即使是王道的阵容排列，也只会像卡拉OK大会一样吧。」</strong></center>
+</li>
+<li><p>Lia自己也觉得「Lia唱了○○的歌」这种事没有意思，所以大家都很重视「希望在Lia唱什么」这一点，小心地选择了翻唱的歌曲。</p>
+</li>
+</ul>
+<center><img src="https://wx2.sinaimg.cn/large/90b1e305ly4fs8xddv4q2j20hs0hstap.jpg" alt="　"></center>
+
+<h2 id="制作"><a href="#制作" class="headerlink" title="制作"></a>制作</h2><ul>
+<li><p>Lia最开始不知道，结果在录音结束后听「魂之轮回」还没有收录过的Lia的声音。那里用的是IA。<br> Lia基本上整首歌主音与和声全都是自己来，所以收录多的话有点够呛的。<br>不过，今后「合唱是可以的话用IA啊」。</p>
+</li>
+<li><p>「魂之轮回」这首歌，从意识到呼吸，向有点悲伤的唱法转换了方向。<br>Lia原本不想破坏的粉丝对于原曲的印象，但是必须又要有所区别，在这件事上的调整太辛苦了。<br>但是，那也是这次的专辑中Lia最想要听的部分。<br>「我很喜欢这首歌，要听几百次几千次！」这样的话，是很多人都听原曲的强烈想法。<br>Lia该如何传达给这些人呢……这是这次的挑战。</p>
+</li>
+<li><p>Lia从小就擅长模仿，所以原曲听多了的话，唱的方法就会很像。所以Lia在注意尽量不要听太多的原曲。<br>另外在重视这首歌曲的世界观的同时，并不是模仿，而是作为「Lia」如何表现这首歌……在这两件事上很烦恼。</p>
+</li>
+<li><p>「最珍贵的宝物」与其他9首不同，是很接近原曲的，「因为原来的曲子就很不错」。<br>像「最珍贵的宝物」一样，的简单旋律抒情曲原本就是Lia的拿手戏，所以很开心地唱了。<br>「虽然以前不擅长的高速节奏曲现在也唱了，<strong>但是ballad类的话，我想让大家听后感叹道“这就是Lia!”</strong>」</p>
+</li>
+<li><p>Producer挑选的「创盛的大天使」很难，音程高又富有节奏感，而且原唱AKINO的歌声就很有冲击力，给人印象很深。<br>「普通地唱的话是绝对超不过AKINO的」，所以Lia对此很烦恼。<br>但是平出悟为Lia做出了很帅又与Lia相合的编曲，所以就可以做到。多亏于此感觉很好地完成了。</p>
+</li>
+<li><p>「OPEN YOUR MIND」是由田中公平做编曲的。<br>田中先生因为知道Lia在美国的音大学习古典音乐和爵士乐，所以就像jazz的session一样提出了<br>“这首歌就用现场演奏，在那场上说“se—no”就开始配合录音”。<br>当天进入大工作室后，在第一线活跃的大人物们聚集在一起，Lia已经很紧张了！<br>其中，钢琴教师是和Lia在同一个音大的人，说了「好久不见」的问候，Lia终于稍微和缓了一下。<br>「<strong><em>真的是意想不到的成员聚集在了一起，但是音乐本来就是这样的</em></strong>。伯克利音乐学院是一所爵士乐学校，即兴也有很多。久违地感受到了当时的紧张感。」<br>「活用在大学里的经验，这次现场和演奏乐器的人一起录音真的很开心。」</p>
+</li>
+</ul>
+<center><img src="https://wx4.sinaimg.cn/large/90b1e305ly4fs8xdltedfj20hs0bumz6.jpg" alt="　"></center>
+
+<h2 id="往事"><a href="#往事" class="headerlink" title="往事"></a>往事</h2><p>对于Lia来说最重要的歌手活动之中的转折点——「果然还是鸟之诗的时候」。</p>
+<p>下以Lia视角回忆</p>
+<blockquote>
+<p>当时，在住在美国的我正在使用洛杉矶Studio时，我收到了Key的一封邮件。「想在公司职员旅行去美国的时候，在洛杉矶的录音棚录歌」。因为录音棚的工作人员没有能懂日语的人，所以我做了交换的桥梁。（注：这棚子是派拉蒙的。）<br><br>但是，本来应该担任vocal的人没能来。I’ve的高濑一矢就联络我问到「你说你在唱歌吧？」，我就补位代替，用「打工的感觉」（注：请意会ry）唱了。<br><br>录制的是在「AIR」中使用的「鸟之诗」「Farewell song」「青空」三首歌曲。<br>「真的是奇迹般的相遇的偶然」这种话在各种各样的地方一直说，现在已经是必然的命运了。否则现在我就不会坐在这里。<br><br>当时录音的时候，Key和录音工程师之间的翻译让我很辛苦，所有的指令全都是我在中间充当交换的。<br><br>要和第一次的人一起工作，要做日语和英语翻译，要唱歌，要注意大家啊……<br>途中喘不过气来，逃进了摄影棚中的院子里，一个人哭了。大概是累得很紧张的顶峰吧。<br>「还好吗？不好意思不好意思」高濑桑抚摸着我的肩膀，我一边说着「对不起」道歉一边流着眼泪。<br><br>在这样痛苦回忆下唱的歌曲，让很多人称为「神曲」，有了辛苦的价值。<br><br>「「鸟之诗」是无心插柳自立成荫的，注意到了的时候被很多的粉丝们喜爱，吓了一跳。」<br><br>从收录过了一段时间，回到日本后，我在想「怎样才能做音乐活下去呢」的时候，<br>从Key的麻枝准先生那里得到了「夏影」、「nostalgia」（注：KSLA-0002）的录音工作。<br><br>「我又得到了打工的工作！」我像这样的心情去了Key公司，结果被要了签名。<br><br>「啊，为什么想要我的签名呢？有粉丝吗？」我感到很吃惊，又真的很感谢。</p>
+</blockquote>
+<center><img src="https://wx4.sinaimg.cn/large/90b1e305ly4fs8xdqxl8cj20hs0bujtl.jpg" alt="　"></center>
+
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<li><p><strong>Lia想积极地增加演唱会。</strong><br></p>
+<blockquote>
+<p>「因为我和其他艺人相比，演唱会的数量很少，今后我会尽可能地向粉丝们送上现场演唱的歌曲。」</p>
+</blockquote>
+<p>前年，Lia第一次在中国的上海举行了演唱会，给她留下了深刻的印象。（注：BML2016）<br></p>
+<blockquote>
+<p>「中国人很多，一望无际像灯的海洋。」<br>「当我呼喊「大家唱」的时候大家全都在唱。「有这么多人知道我的曲子」的感动现在也无法忘怀。」<br>「演唱会是个能和粉丝们交流的唯一无二的地方，每次都很开心。总是给我惊喜，我真的很高兴。唱「鸟之诗」的话，每个国家都会有同样的反应，真是太感谢了。无论何时何地公演，都会从观众席中感受到同样的热情。」<br>「<strong>我觉得动画的力量还是很大的。我认为动画是日本的文化，在为了动画在海外传播得更广这件事上，我也能成为这一力量的话就好了</strong>。在海外的LIVE中，如果能通过歌曲来宣传的话……我不需要翻译（英语），所以请一定要叫我到国外的舞台。」</p>
+</blockquote>
+</li>
+</ul>
+<center><img src="https://wx4.sinaimg.cn/large/90b1e305ly4fs8xdvosqjj20hs0budi4.jpg" alt="　"></center>
+
+<h2 id="Lia的结语"><a href="#Lia的结语" class="headerlink" title="Lia的结语"></a>Lia的结语</h2><blockquote>
+<p>「REVIVES -Lia Sings beautiful anime songs-」是翻唱专辑，有Bossa Nova，有dance music，有rock的曲调，各种各样自由的编曲。不被束缚、自由广幅的音乐如果被广大年龄层的粉丝们享受，我会很高兴。<br><br>而且，如果能把翻唱专辑也成为系列化的话，我会很高兴的。<br><br>为此请更多的人听「REVIVES」，请大家多多关照！</p>
+</blockquote>
+<center><img src="https://wx3.sinaimg.cn/large/90b1e305ly4fs8xe314e9j20my0dmgmz.jpg" alt="　"></center>
+
+<p></p></div><div class="share"><span>分享到</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a href="http://twitter.com/home?status=https://Clarecia.github.io/posts/Lia - Anime!Anime! Interview/%20夏影%20Lia 「Anime！Anime！」访谈简单要点总结" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span class="pre pagbuttons"><a role="navigation" href="/posts/Lia - REVIVES Album Comment/" title="Lia「REVIVES」本人评论语翻译"><i class="fa fa-angle-double-left"></i>&nbsp;上一篇: Lia「REVIVES」本人评论语翻译</a></span><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/posts/Kami-sama hajimemashita cnsub/" title="元气少女缘结神◎ / 元气少女缘结神2 外挂字幕">下一篇: 元气少女缘结神◎ / 元气少女缘结神2 外挂字幕&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div><a id="comments"></a><div id="disqus_thread"></div><script>var disqus_shortname = 'natsukage';
+var disqus_identifier = 'posts/Lia - Anime!Anime! Interview/';
+var disqus_title = 'Lia 「Anime！Anime！」访谈简单要点总结';
+var disqus_url = 'https://Clarecia.github.io/posts/Lia - Anime!Anime! Interview/';
+(function () {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//natsukage.disqus.com/count.js" async></script></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2018&nbsp;<a target="_blank" href="https://Clarecia.github.io" rel="noopener noreferrer">natsukage</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>

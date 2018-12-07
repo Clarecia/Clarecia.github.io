@@ -1,42 +1,156 @@
-include mixins
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><meta name="author" content="natsukage"><title>「Lia Music Works Records」闲谈 · 夏影</title><meta name="description" content="前阵子本人一时兴起，做了两期Lia的音乐活动（碟片）年表「Lia Music Works Records Vol.1」、「Lia Music Works Records Vol.2」，随后因为没有时间与精力、没有观众等诸多原因决定坑在这里不继续下去了。但是已经做好的两期内因为客观性和时长等诸多原因有"><meta name="keywords" content=""><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="renderer" content="webkit"><link rel="short icon" href="/images/favicon.png" type="image/x-icon"><link rel="stylesheet" href="/css/bootstrap.min.css"><link rel="stylesheet" href="/css/font-awesome.min.css"><link rel="stylesheet" href="/css/style.css"><link rel="alternate" type="application/atom+xml" title="ATOM 1.0" href="/atom.xml"><link rel="stylesheet" href="/css/prism.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head><body><div id="stage" class="container"><div class="row"><div id="side-bar" class="col-sm-3 col-xs-12 side-container invisible"><div class="vertical-text site-title"><h3 tabindex="-1" class="site-title-small"><a href="/" class="a-title">natsukage</a></h3><h1 tabindex="-1" class="site-title-large"><a href="/" class="a-title">夏影</a></h1><!--h6(onclick="triggerSiteNav()") Trigger--></div><br class="visible-lg visible-md visible-sm"><div id="site-nav" class="site-title-links"><ul><li><a href="/">首页</a></li><li><a href="/archives">归档</a></li><li><a href="/categories">分类</a></li><li><a href="/tags">标签</a></li><li><a href="/about/H.html">污物集散地</a></li><li><a href="/about/index.html">关于</a></li><li class="soc"><a href="https://Clarecia.github.io/atom.xml" target="_blank" rel="noopener noreferrer"><i class="fa fa-rss">&nbsp;</i></a></li></ul><div class="visible-lg visible-md visible-sm site-nav-footer"><br class="site-nav-footer-br"><footer><p>&copy;&nbsp;2018&nbsp;<a target="_blank" href="https://Clarecia.github.io" rel="noopener noreferrer">natsukage</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div><div id="main-container" class="col-sm-9 col-xs-12 main-container invisible"><div class="autopagerize_page_element"><div class="content"><div class="post-page"><div class="post-container"><p class="post-title"><a>「Lia Music Works Records」闲谈</a></p><p class="post-meta"><span class="date meta-item">发布于&nbsp;2018-12-07</span><span class="meta-item"><i class="fa fa-comment-o"></i><span>&nbsp;</span><a href="/posts/Lia Music Works Records Comment/#comments">评论</a></span><span class="meta-item"><i class="fa fa-folder"></i><span>&nbsp;</span><a href="/categories/Music/" title="Music" class="a-tag">Music</a><span>&nbsp;</span></span><span class="meta-item"><i class="fa fa-tag"></i><span>&nbsp;</span><a href="/tags/Lia/" title="Lia" class="a-tag">Lia</a><span>&nbsp;</span></span></p><p class="post-abstract"></p><p><br><br>前阵子本人一时兴起，做了两期Lia的音乐活动（碟片）年表<a href="https://www.bilibili.com/video/av32103368" target="_blank" rel="noopener">「Lia Music Works Records Vol.1」</a>、<a href="https://www.bilibili.com/video/av32206935" target="_blank" rel="noopener">「Lia Music Works Records Vol.2」</a>，随后因为没有时间与精力、没有观众等诸多原因决定坑在这里不继续下去了。但是已经做好的两期内因为客观性和时长等诸多原因有大量的闲话没有塞进去，于是就写了这么一篇。因为是跟着视频进度来写的，所以欢迎看这篇的朋友开着视频来同步阅览。</p>
+<center><strong>·口胡不上税·　·说话不负责·　·内容不客观·</strong></center>
 
-extends partial/layout
 
-block site_title
-    != page.title + " · " + config.title
 
-block description
-    - var desc = page.desc || strip_html(page.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 150);
-    meta(name="description", content=desc)
-
-block content
-    .autopagerize_page_element: .content: .post-page
-        include mixins
-        +make_post(page, true)
-        .share
-            span= __('share')
-            | &nbsp;
-            span.soc
-                a.fa.fa-bookmark(href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();", ref="nofollow", target="_blank")
-            span.soc
-                a.fa.fa-weibo(href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&title=',e(d.title),'&appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));")
-            span.soc
-                a.fa.fa-twitter(href=url_for("http://twitter.com/home?status=" + "" + config.url + "/" + page.path + "%20" + config.title + "%20" + page.title + ""))
-        - var prev = page.prev ? page.prev.path : false;
-        - var next = page.next ? page.next.path : false;
-        .pagination
-            p.clearfix
-                if prev
-                    span.pre.pagbuttons
-                        a(role="navigation",href=url_for(prev), title=page.prev.title)
-                            i.fa.fa-angle-double-left
-                            |&nbsp;
-                            != __('prev_post')+': ' + page.prev.title
-                if next
-                    span &nbsp;
-                    span.next.pagbuttons
-                        a(role="navigation",href=url_for(next), title=page.next.title)
-                            != __('next_post')+': ' + page.next.title
-                            |&nbsp;
-                            i.fa.fa-angle-double-right
-        include partial/comments
+<h3 id="Vol-1"><a href="#Vol-1" class="headerlink" title="Vol.1"></a>Vol.1</h3><ul>
+<li><p>开场音乐是光速定下来用林老师这首的，今年新年无聊的时候做过一期推荐OST的视频，选进了「舞动青春」的OST，其中用的就是这一首。旋律本身的律动感很强，用在开场介绍的时候很合适。因为决定得太快甚至当时一度怀疑我是不是在别的视频开头用过这首。</p>
+<p>选定2000~2004上旬的理由是，到第二期开头第一张碟那就变成queens label发行碟片了，在这之前的话还属于大方面依赖Key、I’ve和自己在国外的HAPPY HARDCORE音乐时期，也算是从时代方面割开吧。</p>
+<p>然后第一期片头一开始没想模仿EVA，但是做着做着就起了那么点意思，于是在提醒那一页就把字拉宽了，然而这个效果很不好<del>想要拿回去再做做</del>。</p>
+<p>之所以会有「发售日期」的提醒，是因为当时的很多碟是CM先行然后才通贩来着……比如CLANNAD的OST（这个是Vol.2才会出现的）。有一部分碟甚至查不到是什么时候通贩/什么时候进CM的，那部分就尽力随缘了。</p>
+<p>倒计时是一个补救，因为我PR坏掉了（怀疑是字体缓存的问题）一加字幕就卡退，所以音乐和图片是用PR做的，所有文字都是用Aegisub做的（自吐槽：我觉得我自己是个狠人。），等到我把字幕文件做好的时候才发现这里前奏和正片切得太突兀了……于是搞了个倒计时缓冲一下，感觉心理上来说更能接受一点了……</p>
+</li>
+<li><p>verge：鸟之诗是代打这种事大家听过无数次了就不扯了（也可以<a href="https://clarecia.github.io/posts/Lia%20-%20Anime!Anime!%20Interview/#往事">回顾一下</a>）。当年的高濑一矢真的很爱Lia，后面Lia没能有更多合作还是挺可惜的。</p>
+</li>
+<li><p>Ornithopter：为啥写成Ria我也很好奇，我猜是在录音棚的时候因为日本人的英语问题导致理解错所以表错了……不过这样的话verge那张写的是什么就不知道了<em>（VGMDB记载的verge上写的是Lia，我手里没有碟也没有扫图没法确认）</em>。</p>
+<p>本碟BK：<img src="https://i.loli.net/2018/09/27/5bac6e9c24cf6.png" alt="ornithopter"></p>
+</li>
+<li><p>natukage：夏影这张碟就选了间奏，是故意的。我是真的很爱这张碟，<del>看我博客名称就知道了</del>夏影这首歌的话，我很爱那段间奏，于是我把那段间奏塞进去了。</p>
+<p>麻枝准在本张两首曲目收录进「Key+Lia Best 2001~2010」时做了解说，见<a href="#2：">注2</a>。</p>
+</li>
+<li><p>shift：当时Lia飞去北海道录的音，貌似是那时候第一次见到的kotoko桑<a href="#1：">[注1]</a>（?） 这张单曲后来买不到，不过今年年初的C-VOX收进去了。world wide mix是英文词，除此之外Lia还在前奏即兴哼唱了一段。</p>
+</li>
+<li><p>KANON重编曲：Last Regrets后面这个~ interlude在碟片里写的就是和曲目连一起的……搞不懂他们，但反正2007年进精选的时候把这个interlude剪掉了，Kanon京都动画版用的是没interlude的版本，所以较真的话Kanon用的版本是用完了才进碟（2007年精选）的。</p>
+</li>
+<li><p>Disintegration：这首好像听别的菊苣说过是高濑一矢死线前憋出来的曲子，但是可真是憋出来了个大神曲……全盛时期的I’ve真的很厉害。</p>
+<p>手里有一张G.C.BEST的扫图，提到了关于Lia和本首歌的事，见<a href="#3：">注3</a>。</p>
+</li>
+<li><p>AIR OST：伴奏也是故意选的，鸟之诗前面出现过了，青空在vol.2会出现一次，所以就选farewell song了，但是这首歌虽然很好听，不过拿出来片段的话没有吸引力（对我而言），于是我选了这段比较亮的间奏。</p>
+<p>OST内的作曲者评论：<img src="https://i.loli.net/2018/09/27/5bac6cde74979.png" alt="AIR OST"></p>
+</li>
+<li><p>birthday song, requiem：依然选的是间奏，因为整首歌的Bmelo往后全都是又高又长的音，选30s出来肯定不够……直接选了这段上了贝斯的间奏。</p>
+<p>麻枝准在本张两首曲目收录进「Key+Lia Best 2001~2010」时做了解说，见<a href="#2：">注2</a>。</p>
+</li>
+<li><p>Hardcore Tsunami：Hardcore系列从这首开始登场，这首歌接下来要出现N次，还有一首「YOU &amp; I」</p>
+<p>（販売地域：イギリス、アメリカ）</p>
+</li>
+<li><p>I’m feeling：这张黑胶……出得毫无意义现在也买不到，怀疑是什么夜店搓碟用的……</p>
+</li>
+<li><p>spica：</p>
+<p>麻枝准在本张三首曲目收录进「Key+Lia Best 2001~2010」时做了解说，见<a href="#2：">注2</a>。</p>
+</li>
+<li><p>ALMA LIBRE ～心よ自由になれ～：这张碟怎么勾搭上的不知道，而且曲目好像是当地名曲？（イタリア語）</p>
+</li>
+<li><p>Trance Rave Presents Speed Trance Type 4：I’m feeling又来了。</p>
+<p>这张碟是Victor发的，想不到吧.jpg</p>
+</li>
+<li><p>完。</p>
+<p>最后的结语其实写得很匆忙，是做到那里了才想起来要写这么一点东西。村山久美子那段话出自以前在谷歌翻到的<a href="https://www.yomitime.com/100215/music.html" target="_blank" rel="noopener">一个访谈</a>。</p>
+</li>
+</ul>
+<h3 id="Vol-2"><a href="#Vol-2" class="headerlink" title="Vol.2"></a>Vol.2</h3><ul>
+<li><p>这期因为开头的bgm本来想小众一点的，但是因为选不好于是彻底弃疗了，因此选了EVA最烂大街的配乐。但是还要了一点尊严，用的是新哥斯拉里的重编曲版。不过也因为这个就整个片头都很粗劣地模仿了EVA。</p>
+<p>然后其中几个闪现都有致敬，这种类粗宋各种拉伸摆在黑屏里本来就是EVA系列庵野秀明的玩法， 比如那个概率值是某一华标题的样式，那四个记录标准新剧场版里单行用过，最后那个无休憩neta的是「死与新生」的「Death」篇最后的“休憩“二字。</p>
+</li>
+<li><p>prismatic：这张就是回国之后先发一张的感觉……整张在定位上就约等于「能凑出来发的都发发」，名曲重编曲+芭乐+强节奏曲一箩筐，但是这张中Lia自做词曲的含量最高，后面基本就没怎么写过了。</p>
+</li>
+<li><p>CLANNAD OST：继续选伴奏，选伴奏不是我不喜欢这首歌的意思，而是我真的很喜欢伴奏。而且Ana这歌选人声部分会听睡着吧，选进这种片段选集里不够亮眼（。</p>
+<p> OST内的评论：<img src="https://i.loli.net/2018/09/27/5bac6e9c0d52a.png" alt="Ana"></p>
+</li>
+<li><p>头文字D：谁能想到，Lia第一次上TV的tie是头文字D Fourth Stage。第一张和艾回搭上关系的碟，后面还有一张。</p>
+</li>
+<li><p>CL REMIX：做到这里的时候第一次开始认真考虑要不要算remix（……），最后考虑就是这种官方的remix（无论同人与否）都考虑进去，同人的不考虑了。</p>
+<p> Lia参加了一首Ana，REMIX本首的细井老师是怎么想的（BK）：<img src="https://i.loli.net/2018/09/27/5bac6e9c3e49a.png" alt="Ana remix"></p>
+</li>
+<li><p>YOU&amp;I：这首曲子和I’m feeling貌似是一起搞出来的，07年进精选的时候两首都说是什么海外稀有音源blabla。这儿是去偷的iTunes试听，音质不错，比后面某几首好多了。</p>
+<p>（販売地域：オーストラリア、ニュージーランド 他）</p>
+</li>
+<li><p>HORIZON：和kk的第一次合作，算是和KONAMI扯上关系了，这首后面还会出来一次。</p>
+<p> （KONAMI音乐出版发行）</p>
+</li>
+<li><p>君の余韻：和崎元仁合作第一弹，崎元仁当年是不是不太懂怎么写一首非游戏用的曲子。</p>
+</li>
+<li><p>Colors of Life：和崎元仁合作第二弹。这两张我也不知道为什么不是queens label自己发的，感觉是不是厂牌拉来搞的企划啊……而且两张的品番内厂牌不一样是最SAO的…</p>
+<p>btw 专辑曲子不够单曲内的remix来凑。</p>
+<p>（Dex Entertainment发行）</p>
+</li>
+<li><p>DEEP PARADISE：迷之关系之和KIYOTO.F的合作碟，我手里唯一一期Lia的FC册子还在最后宣传这个，这张碟是装甲骑兵相关的，日升音乐出版发的←可敢信。</p>
+</li>
+<li><p>enigmatic LIA：这个系列第一张来啦，大概会全都选择original ver。另外Light In the Air这歌从结构上来说真是又莫名其妙又难唱。</p>
+</li>
+<li><p>Tomoyo After OST：高口碑神曲Light Colors，本来想选长一点但是每首都是30s左右就……（。</p>
+<p>OST内的评论：<img src="https://i.loli.net/2018/09/27/5bac6e9c14fd2.png" alt="Tomoyo After"></p>
+</li>
+<li><p>gift：表情包.jpg <img src="https://i.loli.net/2018/09/27/5bac55580476d.jpg" alt="强颜欢笑"></p>
+<p>顺便，这张最后这个gift duo ver我也没听出来是和谁duo了，bk也没写，加了个钢琴伴奏也算吗。</p>
+</li>
+<li><p>GetDream：tie子供系列，OP+ED1塞一张里发，OP是别人唱的，所以这张单曲变成了“Lia部分参加”。</p>
+<p><del>这首歌的音效有一个神似win7开机效果音的声音，在选的这段里就有。（可能是我幻听）</del></p>
+<p>豆知识：表题曲这首的词曲是HΛL写的。</p>
+<p>和HΛL的梅崎俊春、清水武仁的合影：</p>
+<p><img src="https://i.loli.net/2018/09/27/5bac70677972a.png" alt="HΛL"></p>
+</li>
+<li><p>TERANOID： 嗯，HORIZON又来了，remix过了。<del>但是听着总觉得气息声更重了，好像重录了一遍人声一样……（可能是我幻听）</del> 这张是艾回发的。</p>
+</li>
+<li><p>gift：想不到吧.jpg <img src="https://i.loli.net/2018/09/27/5bac55580476d.jpg" alt="强颜欢笑"></p>
+<p>我们通贩还能把DVD删了再计算一次（1stPLACE官网这么计的，所以跟他们同步，虽然碟片品番都一样）。</p>
+</li>
+<li><p>THE FORCE OF LOVE：有这么一张非卖品我还是这次统计才知道，查了一圈才知道是什么Starter Kit的特典，这Starter Kit是什么买了会送一张安装光盘+新手攻略+游戏大礼包的那种东西吗（。</p>
+<p>另外这首歌作为主题曲真是太淡了，整首歌就这段有一些游戏的史诗感，单拿出来这段可真是非常好……</p>
+</li>
+<li><p>鸟之诗：黑胶盘，场贩无通贩，气人。LB和星之梦(?)都搞过黑胶也都通贩了，就AIR不通贩。鸟之诗前面选过了，青空后面要选一个很接近原版的remix……farewell song在vol.1只选过间奏（和一小句），那就在这儿用这首了。</p>
+</li>
+<li><p>TRANCE REVOLUTION：“我还翻唱过八神纯子 想不到吧”。这碟只搜到一个种子还die了，于是这段去偷的日亚试听，音质就这样了。</p>
+<p>BMG JAPAN发的。</p>
+</li>
+<li><p>THE FORCE OF LOVE ALBUM：非常欧美的一段炫技吼，这张专辑因为搞了各种theme所以曲风很多的，我最喜欢那首jazz感的，但是放在选集内味太淡了……</p>
+<p>这张好像有韩方的人来监制（游戏本体是韩国的，日本引进），也不知道为什么找得上Lia，可能是因为2005年Lia去韩国演出过（宣传稿全都说什么引起轰动的……嘛嘛）。</p>
+<p>当年整张碟制作的记录见<a href="#4：">注4</a>。</p>
+<p>选的封面是通常版的，限定版的品番应该和通常版没什么区别，唯一的区别是送了个替换封面，限定版的封面就是网易云这张碟那个。</p>
+<p>最后，这游戏日服今年停运了。</p>
+</li>
+<li><p>PRIDE： tie子供第二弹（ED2）。</p>
+<p>豆知识：表题曲这首的曲是HΛL写的。（词：三井ゆきこ）</p>
+</li>
+<li><p>OTSU Vol.1： 前面提到的青空就在这儿，这版REMIX还挺适合我这种老年心态的。</p>
+</li>
+<li><p>Afternoon Tea： “我不光能翻唱八神纯子，我还能翻唱The Delfonics，诶，The Delfonics”。</p>
+<p>这首最后版权被事务所弄回来了，进精选了，所以这儿我偷懒用的精选里的音源，应该没区别。</p>
+</li>
+<li><p>矢神音乐祭：该说的在视频的注里都说了，就是这个系列tie得太尬了……一条可怜的声优第一季是南里侑香，第二季直接就换成MAKO了然后找了个歌替，要是维持第一季人选的话这两个唱歌机会就是南里的了……被南里厨记恨的一次tie。</p>
+<p> 和播磨拳儿的声优高桥广树先生的合影：</p>
+<p> <img src="https://i.loli.net/2018/09/27/5bac7067623ad.png" alt="sr"></p>
+</li>
+<li><p>格斗魂：还记得前面翻唱八神纯子那次吗？就那个全损音质的。这次这首歌出自Lia在那张时的另一首翻唱，直接拿过来用的（“再收录”）。<del>同样这张好像也没档，但是也·没·试·听……于是我把TRANCE REVOLUTION内的那个全损音质试听拿过来用了……</del></p>
+<p><strong>20181017：这首收精选了我把这事儿给忘了……但是我工程文件都扔了，算了吧.jpg</strong></p>
+<p>还是BMG JAPAN发的。</p>
+</li>
+<li><p>dearly：事务所自己厂牌的标准专辑第二张，特邀彩菜老师来重录一版Last Regrets。</p>
+<p>射光这歌Lia在07年LIVE上大破音，后来在07年的LIVE碟comment里提了对于这首歌的想法， 看不懂，略。</p>
+</li>
+<li><p>Over the Future： tie子供第三弹（ED3），这个系列也到这儿就完了。</p>
+<p>感觉这首唱得很随性，声音也太奔放了……</p>
+<p>这首歌的作曲是IPPEI.，在「THE FORCE OF LOVE」中也写了一首。</p>
+</li>
+<li><p>enigmatic LIA2：这张里其实带了很多LIVE音源，我比较喜欢那些，但是还是秉承着这个系列选ORIGINAL MIX的原则选了一首新曲（。</p>
+</li>
+<li><p>最后的后记音乐选的让人头大（。做到这儿本期结束了的最大原因其实是我懒得接着往下做了……</p>
+</li>
+</ul>
+<p><strong>完。</strong></p>
+<h3 id="注"><a href="#注" class="headerlink" title="注"></a>注</h3><h5 id="1："><a href="#1：" class="headerlink" title="1："></a>1：</h5><p>Lia：「ちなみに、私が島みやさんと初めて会ったのは2005年のI’veさんの武道館ライブの前に、北海道のスタジオに曲を録りに行った時ですね。まだ当時デビューしていないKOTOKOちゃんが勉強の為に、と私のレコーディングの見学に来てくれていました。」<br>Lia去北海道录音的机会应该只有两次，一次是shift，另外一次是Disintegration。<br> 虽然I’ve武道馆是2005年的事了，但是KOTOKO在2001年12月初（「LOVE A RIDDLE/I can’t get over your best smile」）就已经Debut了…<br>而且KOTOKO在之前也不是没发过…于是这段就搞得很混乱。<br>笔者迷思，要么是是shift的录音比KOTOKO名义的第一张(前述)要早，要么是全盘记错了。但是这个是和岛宫荣子一起的访谈，亲历者岛宫也没有对这段话有异议……<br>原文：<a href="https://www.animatetimes.com/news/details.php?id=1355406705" target="_blank" rel="noopener">Animate访谈</a> （感谢电波菊苣）。</p>
+<h5 id="2："><a href="#2：" class="headerlink" title="2："></a>2：</h5><p><img src="https://i.loli.net/2018/09/27/5bac66b521a1e.png" alt="麻枝准解说"></p>
+<h5 id="3："><a href="#3：" class="headerlink" title="3："></a>3：</h5><p><img src="https://i.loli.net/2018/09/27/5bac683cb4441.png" alt="高濑一矢解说"></p>
+<h5 id="4："><a href="#4：" class="headerlink" title="4："></a>4：</h5><p><img src="https://i.loli.net/2018/09/27/5bac775a14715.png" alt="tfol"></p>
+<p></p></div><div class="share"><span>分享到</span>&nbsp;<span class="soc"><a href="javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&amp;title='+encodeURIComponent(document.title);}})();" ref="nofollow" target="_blank" class="fa fa-bookmark"></a></span><span class="soc"><a href="javascript:void((function(s,d,e){try{}catch(e){}var f='http://service.weibo.com/share/share.php?',u=d.location.href,p=['url=',e(u),'&amp;title=',e(d.title),'&amp;appkey=2924220432'].join('');function a(){if(!window.open([f,p].join(''),'mb',['toolbar=0,status=0,resizable=1,width=620,height=450,left=',(s.width-620)/2,',top=',(s.height-450)/2].join('')))u.href=[f,p].join('');};if(/Firefox/.test(navigator.userAgent)){setTimeout(a,0)}else{a()}})(screen,document,encodeURIComponent));" class="fa fa-weibo"></a></span><span class="soc"><a href="http://twitter.com/home?status=https://Clarecia.github.io/posts/Lia Music Works Records Comment/%20夏影%20「Lia Music Works Records」闲谈" class="fa fa-twitter"></a></span></div><div class="pagination"><p class="clearfix"><span>&nbsp;</span><span class="next pagbuttons"><a role="navigation" href="/posts/Lia - REVIVES Album Comment/" title="Lia「REVIVES」本人评论语翻译">下一篇: Lia「REVIVES」本人评论语翻译&nbsp;<i class="fa fa-angle-double-right"></i></a></span></p></div><a id="comments"></a><div id="disqus_thread"></div><script>var disqus_shortname = 'natsukage';
+var disqus_identifier = 'posts/Lia Music Works Records Comment/';
+var disqus_title = '「Lia Music Works Records」闲谈';
+var disqus_url = 'https://Clarecia.github.io/posts/Lia Music Works Records Comment/';
+(function () {
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//natsukage.disqus.com/count.js" async></script></div></div></div><div class="visible-xs site-bottom-footer"><footer><p>&copy;&nbsp;2018&nbsp;<a target="_blank" href="https://Clarecia.github.io" rel="noopener noreferrer">natsukage</a></p><p>Theme&nbsp;<a target="_blank" href="https://github.com/SumiMakito/hexo-theme-typography" rel="noopener noreferrer">Typography</a>&nbsp;by&nbsp;<a target="_blank" href="https://www.keep.moe" rel="noopener noreferrer">Makito</a></p><p>Proudly published with&nbsp;<a target="_blank" href="https://hexo.io" rel="noopener noreferrer">Hexo</a></p></footer></div></div></div></div><script src="/js/jquery-3.1.0.min.js"></script><script src="/js/bootstrap.min.js"></script><script src="/js/jquery-migrate-1.2.1.min.js"></script><script src="/js/jquery.appear.js"></script><script src="/js/google-analytics.js"></script><script src="/js/typography.js"></script></body></html>
